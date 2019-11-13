@@ -1,0 +1,19 @@
+"dota_agyar_shops"
+{
+	"consumables"
+	{
+		"item"		"item_tpscroll"
+		"item"		"item_clarity"	
+		"item"		"item_faerie_fire"				
+		"item"		"item_smoke_of_deceit"
+		"item"		"item_ward_observer"
+		"item"		"item_ward_sentry"
+		"item"		"item_enchanted_mango"
+		"item"		"item_flask"
+		"item"		"item_tango_agyar"
+		"item"		"item_tome_of_knowledge"
+		"item"		"item_imba_dust_of_appearance"
+		"item" 		"item_bottle"
+	//  "item"		"item_imba_soul_of_truth"
+	}
+}

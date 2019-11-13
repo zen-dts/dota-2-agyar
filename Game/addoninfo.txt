@@ -1,0 +1,5 @@
+"AddonInfo"
+{
+	"maps"					"dota_agyar"
+	"EnablePickRules"		"1"
+}

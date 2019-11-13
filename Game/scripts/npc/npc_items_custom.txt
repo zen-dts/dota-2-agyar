@@ -1,0 +1,105 @@
+"DOTAAbilities"
+{
+	"item_tombstone"
+	{
+		"AbilityChannelTime"			"10.0"
+
+		// copied from "item_mutation_tombstone"
+
+		"AbilityName"					"item_tombstone"
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_CHANNELLED | DOTA_ABILITY_BEHAVIOR_DONT_RESUME_ATTACK"
+		"Model"							"models/props_gameplay/tombstoneb01.vmdl"
+		"PingOverrideText"				"DOTA_Chat_Tombstone_Pinged"
+		"precache"
+		{
+			"particle_folder" "particles/units/heroes/hero_morphling"
+		}
+
+
+		"AbilityCastRange"				"100"
+		"AbilityCastPoint"				"0.0"
+
+		"ItemCost"						"0"
+		"ItemPurchasable"				"0"
+		"ItemShopTags"					"consumable"
+		"ItemQuality"					"consumable"
+		"ItemStackable"					"1"
+		"ItemShareability"				"ITEM_FULLY_SHAREABLE"
+		"ItemPermanent"					"0"
+		"ItemInitialCharges"			"1"
+		"ItemCastOnPickup"				"1"
+		"ItemKillable"					"0"
+	}
+
+	//=================================================================================================================
+	// Tango
+	//=================================================================================================================
+	"item_tango_agyar"
+	{
+		"ID"					"2000"
+		"BaseClass"				"item_lua"
+		"ScriptFile"			"items/item_tango_agyar.lua"
+		"AbilityTextureName"	"item_tango_agyar"
+
+		"AbilityBehavior"		"DOTA_ABILITY_BEHAVIOR_UNIT_TARGET"
+		"AbilityUnitTargetType"	"DOTA_UNIT_TARGET_CUSTOM"
+		"AbilityUnitTargetTeam"	"DOTA_UNIT_TARGET_TEAM_CUSTOM"
+
+		"AbilitySound"			"DOTA_Item.Tango.Activate"
+		"AbilityCastRange"		"150"
+		"AbilityCastPoint"		"0.0"
+		"AbilityCooldown"		"0.1"
+
+		"SpellImmunityType"		"SPELL_IMMUNITY_ENEMIES_YES"
+
+		"ItemCost"				"90"
+		"ItemPurchasable"		"1"
+		"ItemShopTags"			"consumable"
+		"ItemQuality"			"consumable"
+		"ItemCastOnPickup"		"0"
+		"ItemShareability"		"ITEM_FULLY_SHAREABLE"
+		"ItemPermanent"			"0"
+		"InitialItemCharges"	"3"
+
+
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"			"FIELD_INTEGER"
+				"cast_range_ward"	"300"
+			}
+			
+			"02"
+			{
+				"var_type"			"FIELD_INTEGER"
+				"health_regen"		"15.0"
+			}
+			"03"
+			{
+				"var_type"			"FIELD_INTEGER"
+				"alt_tango_cd"		"45"
+			}		
+			"04"
+			{
+				"var_type"			"FIELD_INTEGER"
+				"buff_duration"		"8"
+			}
+			"05"
+			{
+				"var_type"			"FIELD_INTEGER"
+				"tango_charges"		"3"
+			}
+			"06"
+			{
+				"var_type"			"FIELD_INTEGER"
+				"dmg_pct_min"		"2"
+			}
+			"07"
+			{
+				"var_type"			"FIELD_INTEGER"
+				"dmg_pct_min"		"10"
+			}
+		}
+	}
+}
